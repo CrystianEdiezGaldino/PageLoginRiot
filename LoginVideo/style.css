@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+}
+
+:root {
+    --white: #fff --whitesmote: #f9f9f9 --ligth-grey: #ececec --grey: #c4c4c4 --medin-grey: #a7a7a7 --deep-grey: #343434 --black: #000 --blue: #1b77f3 --red: #cf3c3f
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    padding: clamp(35px, 8%, 70px);
+}
+
+.login_logo {
+    width: 130px;
+    margin-bottom: 80px;
+}
+
+.login_title {
+    color: dimgrey;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.login_label {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    background-color: lightgray;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9em;
+    padding: 25px 10px 10px;
+    font-weight: 600;
+    color: rgb(27, 24, 24);
+    margin-bottom: 5px;
+
+}
+
+.login_label ::placeholder {
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(71, 67, 67, 0.685);
+ 
+ 
+    cursor: text;
+    transition: all 200ms ease;
+}
+
+.input:focus {
+    background-color: whitesmoke;
+    border: 2px solid gainsboro;
+
+}
+
+.login_icons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.login_icons img {
+    width: 20px;
+}
+
+.btn_icons {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.login_icons .btn_icons:nth-child(1) {
+    background-color: blue;
+}
+
+.login_icons .btn_icons:nth-child(2) {
+    background-color: gainsboro;
+}
+
+.login_icons .btn_icons:nth-child(3) {
+    background-color: black;
+}
+
+.login_checkbox {
+    width: 100%;
+    margin: 15px 0 50px;
+    font-weight: 500;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
+
+.input--checkbox {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+
+}
+
+.login_btn {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(189, 37, 37);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_link {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: rgb(88, 83, 83);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+}
+
+.videowbg {
+    height: 100vh;
+    z-index: -100;
+    background: url(lucianimg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    overflow: hidden;
+    overflow-x: hidden;
+}
